@@ -1,0 +1,10 @@
+name: Manual workflow testing
+
+on: 
+  workflow_dispatch:
+jobs:
+  experimental-great:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the User
+        run: echo "Hello World!"
