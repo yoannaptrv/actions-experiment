@@ -1,7 +1,13 @@
-name: Manual workflow testing
+name: Workflow testing
 
 on: 
   workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  
 jobs:
   experimental-great:
     runs-on: ubuntu-latest
