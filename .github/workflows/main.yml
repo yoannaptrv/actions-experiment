@@ -25,7 +25,7 @@ jobs:
       - name: Show directory after checkout 
       - run: ls -l
       - name: Shoe env vars
-        run: 
+        run: |
           echo "Hello $MY_ENV"
           echo "Hello $GITHUB_ACTOR"
         
